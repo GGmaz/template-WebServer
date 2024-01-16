@@ -1,0 +1,36 @@
+version: "3"
+services:
+  pg:
+    image: postgres:latest
+    restart: always
+    container_name: tournament-service-pg
+    environment:
+      POSTGRES_USER: XML
+      POSTGRES_PASSWORD: ftn
+      POSTGRES_DB: XML_TEST
+    ports:
+      - "4003:5432"
+    healthcheck:
+      test: ["CMD-SHELL", 'pg_isready -U XML -d "XML_TEST"']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  user-service:
+    build: user-service
+#    image: relative-fi/tournament-service
+    container_name: user-service
+    restart: always
+    environment:
+      - DB_USER=XML
+      - DB_HOST=pg
+      - DB_PASSWORD=ftn
+      - DB_NAME=XML_TEST
+      - DB_PORT=5432
+      - USER_SERVICE_HOST=user-service
+      - USER_SERVICE_PORT=8081
+    ports:
+      - "8081:8081"
+    depends_on:
+      pg:
+        condition: service_healthy
