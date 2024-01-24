@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"github.com/GGmaz/wallet/user-service/internal/db/model"
-	"github.com/GGmaz/wallet/user-service/pkg/utils"
-	"github.com/GGmaz/wallet/user-service/pkg/wire"
+	"github.com/GGmaz/template-service/internal/db/model"
+	"github.com/GGmaz/template-service/pkg/utils"
+	"github.com/GGmaz/template-service/pkg/wire"
 	"github.com/gin-gonic/gin"
 )
 

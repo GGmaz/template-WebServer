@@ -2,9 +2,9 @@ package repo
 
 import (
 	"errors"
-	"github.com/GGmaz/wallet/user-service/internal/ctx"
-	"github.com/GGmaz/wallet/user-service/internal/db/model"
-	"github.com/GGmaz/wallet/user-service/pkg/utils"
+	"github.com/GGmaz/template-service/internal/ctx"
+	"github.com/GGmaz/template-service/internal/db/model"
+	"github.com/GGmaz/template-service/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 	"log"

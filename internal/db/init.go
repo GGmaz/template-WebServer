@@ -3,8 +3,8 @@ package db
 import (
 	"context"
 	"fmt"
-	"github.com/GGmaz/wallet/user-service/config"
-	"github.com/GGmaz/wallet/user-service/internal/db/model"
+	"github.com/GGmaz/template-service/config"
+	"github.com/GGmaz/template-service/internal/db/model"
 	"log"
 	"os"
 	"time"

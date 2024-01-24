@@ -1,8 +1,8 @@
 package main
 
 import (
-	cfg "github.com/GGmaz/wallet/user-service/config"
-	srv "github.com/GGmaz/wallet/user-service/internal/server"
+	cfg "github.com/GGmaz/template-service/config"
+	srv "github.com/GGmaz/template-service/internal/server"
 )
 
 func main() {

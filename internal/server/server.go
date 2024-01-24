@@ -1,10 +1,10 @@
 package server
 
 import (
-	"github.com/GGmaz/wallet/user-service/config"
-	"github.com/GGmaz/wallet/user-service/internal/ctx"
-	"github.com/GGmaz/wallet/user-service/internal/db"
-	v1 "github.com/GGmaz/wallet/user-service/internal/server/api"
+	"github.com/GGmaz/template-service/config"
+	"github.com/GGmaz/template-service/internal/ctx"
+	"github.com/GGmaz/template-service/internal/db"
+	v1 "github.com/GGmaz/template-service/internal/server/api"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 	"log"

@@ -1,4 +1,4 @@
-module github.com/GGmaz/wallet
+module github.com/GGmaz/template-service
 
 go 1.21.1
 
